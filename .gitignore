@@ -1,0 +1,63 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+src-tauri/target/
+
+# Database files (local development)
+*.db
+*.db-journal
+*.db-wal
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+
+# Tauri
+src-tauri/gen/android/
+!src-tauri/gen/android/app/src/main/java/com/cazzmachine/app/MainActivity.kt
+!src-tauri/gen/android/app/src/main/res/mipmap-*/ic_launcher.png
+!src-tauri/gen/android/app/src/main/res/mipmap-*/ic_launcher_round.png
+!src-tauri/gen/android/app/src/main/res/mipmap-*/ic_launcher_foreground.png
+src-tauri/gen/ios/
+.sisyphus/
+bun.lock
+sign.sh
+
+# Build artifacts
+*.apk
+*.apk.idsig
+*.ab
+*.tar.gz
+*.keystore
+
+# Generated files
+src-tauri/gen/schemas/
+
+# Test results and reports
+test-results/
+e2e/test-results/
+e2e/test-results-release/
+playwright-report/
+playwright-report/
